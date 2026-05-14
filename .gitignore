@@ -1,0 +1,4 @@
+````shell
+*.pyc
+__pycache__/
+````
