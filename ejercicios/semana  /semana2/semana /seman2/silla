@@ -1,0 +1,40 @@
+class Silla:
+    def __init__(self, material, ergonomia, portabilidad, no_patas, 
+                 color, altura, reclinable, tamano, peso, diseno):
+        self.material = material
+        self.ergonomia = ergonomia
+        self.portabilidad = portabilidad
+        self.no_patas = no_patas
+        self.color = color
+        self.altura = altura
+        self.reclinable = reclinable
+        self.tamano = tamano
+        self.peso = peso
+        self.diseno = diseno
+        print(f"Material {self.material}")
+        print(f"Ergonomia{self.ergonomia}")
+        print(f"Portabilidad {self.portabilidad}")
+        print(f"Numero de patas {self.no_patas}")
+        print(f"Color {self.color}")
+        print(f"Altura {self.altura}")
+        print(f"Reclinable {self.reclinable}")
+        print(f"Tamaño {self.tamano}")
+        print(f"Peso {self.peso}")
+        print(f"Diseño {self.diseno}")
+        def personas(self):
+        print(f"{self.capacidad} personas estan sentendas")
+    def comoda(self):
+        print(f"{self.ergonomia}no es comoda")
+    def moverMesa(self):
+        print(f"{self.tipo} se movio de lugar")
+    def mantel(self):
+        print(f"{self.tipo} tiene un mantel")
+    def tienePlatos(self):
+        print(f"{self.tipo} tiene platos")
+eventos = Silla("Plastico", "Eventos", "False", "4", "Negra", "90 cm", 
+                    "False", "50 cm", "3 kg", "Facil de transportar")
+eventos.personas()
+eventos.uso()
+eventos.moverMesa()
+eventos.mantel()
+eventos.tienePlatos()
