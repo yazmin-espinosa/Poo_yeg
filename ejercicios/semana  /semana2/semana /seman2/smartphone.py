@@ -1,7 +1,9 @@
 class SmartPhone:
+
     def __init__(self, marca, modelo, color, sistema_operativo,
                  memoria_ram, almacenamiento, camara,
                  bateria, tamano_pantalla, precio):
+        
         self.marca = marca
         self.modelo = modelo
         self.color = color
@@ -22,5 +24,27 @@ class SmartPhone:
         print(f"Bateria {self.bateria}")
         print(f"Tamaño de la pantalla {self.tamano_pantalla}")
         print(f"Precio {self.precio}")
+
+    def encender(self):
+        print(f"{self.marca} {self.modelo} esta encendiendo")
+
+    def llamar(self):
+        print(f"{self.modelo} esta llamando")
+
+    def tomarFotos(self):
+        print(f"{self.modelo} tomo fotos")
+
+    def apagar(self):
+        print(f"{self.marca} {self.modelo} se apago")
+
+    def abrirAplicacion(self):
+        print(f"{self.modelo} esta abriendo la aplicacion")
+
 samsung = SmartPhone("SAMSUNG", "GALAXY S25", "Torna azul", "Android 14", "8 GB RAM", "236 GB", "50 MP", "3900 mAh",
                      "6.1 Pulgadas", "18000 MXN")
+
+samsung.encender()
+samsung.llamar()
+samsung.tomarFotos()
+samsung.apagar()
+samsung.abrirAplicacion()

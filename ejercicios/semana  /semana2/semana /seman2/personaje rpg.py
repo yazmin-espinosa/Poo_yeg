@@ -1,6 +1,8 @@
 class PersonajeRpg:
+
     def __init__(self, nombre, clase, velocidad, nivel, vida, dano_hecho,
                  arma, armadura, habilidad_especial, oro):
+        
         self.nombre = nombre
         self.clase = clase
         self.velocidad = velocidad
@@ -20,18 +22,26 @@ class PersonajeRpg:
         print(f"Arma {self.arma}")
         print(f"Armadura {self.armadura}")
         print(f"Habilidad especial {self.habilidad_especial}")
+        print(f"Oro {self.oro}")
+
     def atacar(self):
         print(f"{self.nombre} esta atacando")
+
     def defender(self):
         print(f"{self.nombre} se defendiendo")
+
     def usarHabilidad(self):
         print(f"{self.nombre} uso {self.habilidad_especial}")
+
     def curarse(self):
         print(f"{self.nombre} se esta curando")
+
     def subirNivel(self):
         print(f"{self.nombre} subiste de nivel")
+    
 freya = PersonajeRpg("Freya", "Guerrero", "67%", "Subiste de nivel 25", "32%", "76%", "Espada Legendaria",
                       "Armadura de Acero", "Golpe de Fuego", "15000 Monedas de Oro")
+
 freya.atacar()
 freya.defender()
 freya.usarHabilidad()

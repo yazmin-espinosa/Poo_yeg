@@ -1,6 +1,8 @@
 class Mesa:
+
     def __init__(self, material, color, forma, altura, ancho,
                   largo, no_patas, peso, capacidad, tipo):
+        
         self.material = material
         self.color = color
         self.forma = forma 
@@ -21,19 +23,26 @@ class Mesa:
         print(f"Peso {self.peso}")
         print(f"Capacidad {self.capacidad}")
         print(f"Tipo {self.tipo}")
-    def personas(self):
+
+    def capacidadPersonas(self):
         print(f"{self.capacidad} personas estan sentendas")
+
     def uso(self):
         print(f"{self.tipo}")
+
     def moverMesa(self):
         print(f"{self.tipo} se movio de lugar")
+
     def mantel(self):
         print(f"{self.tipo} tiene un mantel")
+
     def tienePlatos(self):
         print(f"{self.tipo} tiene platos")
+
 comedor = Mesa("Madera", "Cafe", "Rectangular", "1.20 cm", "30 cm", "60 cm", 
                     "2", "2 kg", "4", "Comedor")
-comedor.personas()
+
+comedor.capacidadPersonas()
 comedor.uso()
 comedor.moverMesa()
 comedor.mantel()

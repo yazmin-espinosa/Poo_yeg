@@ -1,4 +1,5 @@
 class Banco:
+
     def __init__(self, no_clientes, no_elementos_seguridad, no_edificios,
                  sistema_informatico, nombre_banco, no_cajeros,
                  fiable, capital, horario_atencion, color_banco):
@@ -22,5 +23,6 @@ class Banco:
         print(f"Capital {self.capital}")
         print(f"Horario de atencion {self.horario_atencion}")
         print(f"Color del banco {self.color_banco}")
+        
 acme = Banco(100000000, "3 Guardias", "2 Pisos", "Core Banking", "SANTANDER",
              "10 Cajeros", True, 50000000, "8:00 am a 4:00 pm", "Rojo y Blanco")

@@ -1,7 +1,9 @@
 class Banco:
+
     def __init__(self, no_clientes, no_elementos_seguridad, no_edificios,
                  sistema_informatico, nombre_banco, no_cajeros,
                  fiable, capital, horario_atencion, color_banco):
+        
         self.no_clientes = no_clientes
         self.no_elementos_seguridad = no_elementos_seguridad
         self.no_edificios = no_edificios
@@ -22,4 +24,26 @@ class Banco:
         print(f"Capital {self.capital}")
         print(f"Horario de atencion {self.horario_atencion}")
         print(f"Color del banco {self.color_banco}")
+
+    def depositar(self):
+        print(f"Deposito exitoso {self.nombre_banco}")
+
+    def retirar(self):
+        print(f"Retiro exitoso {self.nombre_banco}")
+
+    def transferir(self):
+        print(f"Transferencia exitosa {self.nombre_banco}")
+
+    def prestamo(self):
+        print(f"{self.nombre_banco} otorgo un prestamo")
+
+    def crearCuentas(self):
+        print(f"{self.nombre_banco} creo una cuenta")
+
 acme = Banco(10000, None, None, "ACME0.1", "ACME", 10000, True, 1000000, "9:00 a 19:00", "Verde fosfo")
+
+acme.depositar()
+acme.retirar()
+acme.transferir()
+acme.prestamo()
+acme.crearCuentas()

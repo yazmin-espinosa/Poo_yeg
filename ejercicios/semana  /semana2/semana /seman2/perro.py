@@ -1,6 +1,8 @@
 class Perro:
+
     def __init__(self,raza, tamano, peso, color, temperamento,
                  cola, edad, osico, orejas, pelaje):
+        
         self.raza = raza
         self.tamano = tamano
         self.peso = peso
@@ -21,5 +23,27 @@ class Perro:
         print(f"Osico {self.osico}")
         print(f"Orejas {self.orejas}")
         print(f"Pelaje {self.pelaje}")
-descripcion = Perro("Husky", "60 cm", "27 kg", "Café", "Amigable", "40 cm", 
+
+    def ladrar(self):
+        print(f"{self.raza} esta ladrando")
+
+    def correr(self):
+        print(f"{self.raza} esta corriendo")
+
+    def dormir(self):
+        print(f"{self.raza} esta duemiendo")
+
+    def jugar(self):
+        print(f"{self.raza} esta jugando")
+
+    def rascar(self):
+        print(f"{self.raza} esta rascando")
+
+husky = Perro("Husky", "60 cm", "27 kg", "Café", "Amigable", "40 cm", 
                     "15 años", "15 cm", "12 cm Triangulares", "Esponjoso",) 
+
+husky.ladrar()
+husky.correr()
+husky.dormir()
+husky.jugar()
+husky.rascar()
